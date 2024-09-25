@@ -25,6 +25,9 @@ document.getElementById('History').addEventListener('click', function() {
     History1.classList.remove('hidden');
     donation1.classList.add('hidden');
 });
-
+function getCurrentTime() {
+    const now = new Date();
+    return now.toString();
+}
 
 
