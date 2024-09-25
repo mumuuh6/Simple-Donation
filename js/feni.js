@@ -14,7 +14,7 @@ document.getElementById('donatetofeni')
         document.getElementById('mainbalance').innerText=newbalance1;
 
         const div=document.createElement('div');
-        div.classList.add('my-4')
+        div.classList.add('border','rounded-md','my-4')
         div.innerHTML=`
         <p class="text-xl font-medium p-4">${donation1} Taka is Donated for famine-2024 at Feni, Bangladesh.</p>
         <p class="w-full text-justify p-4 text-gray-400">Time: ${getCurrentTime()}</p>
