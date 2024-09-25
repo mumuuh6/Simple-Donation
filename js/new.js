@@ -29,15 +29,7 @@ function getCurrentTime() {
     const now = new Date();
     return now.toString();
 }
-document.getElementById('donatetonoakhali').addEventListener('click', function() {
-    // Show the modal
-    document.getElementById('modal').classList.remove('hidden');
-});
 
-document.getElementById('close-modal').addEventListener('click', function() {
-    // Hide the modal
-    document.getElementById('modal').classList.add('hidden');
-});
 
 
 

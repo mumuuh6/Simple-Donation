@@ -5,7 +5,8 @@ document.getElementById('donatetonoakhali')
         const donation1= getdonationamount('input-field');//noyakhalir value pass
         const newbalance=parseFloat(document.getElementById('text-field1').innerText);
         const mainbalance=parseFloat(document.getElementById('mainbalance').innerText);
-        if(mainbalance>=donation1){
+        
+        if(mainbalance>=donation1 && donation>0){
         const donatenoya=donation1+newbalance;
         document.getElementById('text-field1').innerText=donatenoya;
         document.getElementById('input-field').value='';
@@ -20,8 +21,17 @@ document.getElementById('donatetonoakhali')
         `
     
         document.getElementById('History1').appendChild(div);
+        document.getElementById('donatetonoakhali').addEventListener('click', function() {
+    
+            document.getElementById('modal').classList.remove('hidden');
+        });
     }
     else{
         alert('Not a proper amount');
+        document.getElementById('donatetonoakhali').addEventListener('click', function() {
+    
+            document.getElementById('modal').classList.add('hidden');
+        });
+        
     }
     });

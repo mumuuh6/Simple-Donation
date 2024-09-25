@@ -6,7 +6,7 @@ document.getElementById('donatetoprotest')
         const newbalance=parseFloat(document.getElementById('text-field3').innerText);
        
         const mainbalance=parseFloat(document.getElementById('mainbalance').innerText);
-        if(mainbalance>=donation1){
+        if(mainbalance>=donation1 && donation1>0){
         const donatenoya=donation1+newbalance;
         document.getElementById('text-field3').innerText=donatenoya;
         document.getElementById('input-field3').value='';
@@ -21,8 +21,17 @@ document.getElementById('donatetoprotest')
         `
         
         document.getElementById('History1').appendChild(div);
+        document.getElementById('donatetoprotest').addEventListener('click', function() {
+    
+            document.getElementById('modal').classList.remove('hidden');
+        });
     }
     else{
         alert('Not a proper amount');
+        document.getElementById('donatetoprotest').addEventListener('click', function() {
+    
+            document.getElementById('modal').classList.add('hidden');
+        });
+        
     }
     });
