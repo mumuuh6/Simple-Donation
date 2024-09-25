@@ -5,7 +5,7 @@ document.getElementById('donatetonoakhali')
         const donation1= getdonationamount('input-field');//noyakhalir value pass
         const newbalance=parseFloat(document.getElementById('text-field1').innerText);
         const mainbalance=parseFloat(document.getElementById('mainbalance').innerText);
-        if(mainbalance>donation1){
+        if(mainbalance>=donation1){
         const donatenoya=donation1+newbalance;
         document.getElementById('text-field1').innerText=donatenoya;
         document.getElementById('input-field').value='';
@@ -15,7 +15,7 @@ document.getElementById('donatetonoakhali')
         const div=document.createElement('div');
         div.classList.add('border','rounded-md','my-4')
         div.innerHTML=`
-        <p class="text-xl font-medium p-4">${donation1} Taka is Donated for Flood Relief in Feni,Bangladesh</p>
+        <p class="text-xl font-medium p-4">${donation1} Taka is Donated for Flood Relief in Noyakhali,Bangladesh</p>
         <p class="w-full text-justify p-4 text-gray-400">Time: ${getCurrentTime()}</p>
         `
     

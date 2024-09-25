@@ -5,5 +5,8 @@ function getdonationamount(id) {
         return numberf;
 
     }
+document.getElementById('Blog').addEventListener("click",function(){
+    window.location.href = "blog.html";
 
+})
 

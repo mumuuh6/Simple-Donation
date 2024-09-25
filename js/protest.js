@@ -6,7 +6,7 @@ document.getElementById('donatetoprotest')
         const newbalance=parseFloat(document.getElementById('text-field3').innerText);
        
         const mainbalance=parseFloat(document.getElementById('mainbalance').innerText);
-        if(mainbalance>donation1){
+        if(mainbalance>=donation1){
         const donatenoya=donation1+newbalance;
         document.getElementById('text-field3').innerText=donatenoya;
         document.getElementById('input-field3').value='';
